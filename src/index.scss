@@ -1,4 +1,10 @@
-@import "base";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// _base.scss is a copy of above
+// @import "base";
+
 @import "vars";
 @import "space";
 @import "layout";
@@ -18,4 +24,3 @@
 @import "interactivity";
 @import "svg";
 @import "accessibility";
-

@@ -1,17 +1,23 @@
 {
-  "name": "deftcss",
+  "name": "@klvny/tailwind-static",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.css",
   "license": "MIT",
+  "author": {
+    "name": "Kelvin Y",
+    "email": "klvny90@gmail.com",
+    "url": "https://github.com/klvny/tailwind-styles-template"
+  },
+  "files": [
+    "dist/index.css",
+    "dist/index.min.css"
+  ],
   "scripts": {
     "build": "npx gulp",
-    "clean": "npx gulp clean",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "clean": "npx gulp clean"
   },
   "dependencies": {
-    "vitepress": "^0.22.3"
+    "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
@@ -24,8 +30,7 @@
     "postcss": "^8.4.12",
     "postcss-import": "^14.1.0",
     "postcss-sorting": "^7.0.1",
-    "sass": "^1.49.9",
-    "tailwindcss": "^3.0.23"
+    "sass": "^1.49.9"
   },
   "browserslist": [
     ">0.2%",
