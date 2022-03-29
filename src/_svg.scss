@@ -1,0 +1,51 @@
+/** Fill */
+.fill-inherit {
+  fill: inherit;
+}
+.fill-current {
+  fill: currentColor;
+}
+.fill-transparent {
+  fill: transparent;
+}
+.fill-black {
+  fill: #000;
+}
+.fill-white {
+  fill: #fff;
+}
+.fill-slate-50 {
+  fill: #f8fafc;
+}
+.fill-slate-100 {
+  fill: #f1f5f9;
+}
+.fill-slate-200 {
+  fill: #e2e8f0;
+}
+
+/** Stroke */
+@each $k, $v in $colors {
+  @each $ks, $vs in $v {
+    @if $ks == "default" {
+      .stroke-#{$k} {
+        stroke: #{$vs};
+      }
+    } @else {
+      .stroke-#{$k}-#{$ks} {
+        stroke: #{$vs};
+      }
+    }
+  }
+}
+
+/** Stroke Width */
+.stroke-0 {
+  stroke-width: 0;
+}
+.stroke-1 {
+  stroke-width: 1;
+}
+.stroke-2 {
+  stroke-width: 2;
+}

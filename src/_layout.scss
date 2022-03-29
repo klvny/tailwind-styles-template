@@ -1,0 +1,360 @@
+/** Aspect Ratio */
+@each $k, $v in $aspectRatio {
+  .aspect-#{$k} {
+    aspect-ratio: #{$v};
+  }
+}
+
+/** Container */
+.container {
+  width: 100%;
+}
+@each $k, $v in $screens {
+  @media (min-width: #{$v}) {
+    .container {
+      max-width: #{$v};
+    }
+  }
+}
+
+/** Columns */
+@each $k, $v in $columns {
+  .columns-#{$k} {
+    columns: #{$v};
+  }
+}
+
+/** Break After */
+@each $k, $v in $breakAfter {
+  .break-after-#{$k} {
+    break-after: #{$v};
+  }
+}
+
+/** Break Before */
+@each $k, $v in $breakAfter {
+  .break-before-#{$k} {
+    break-before: #{$v};
+  }
+}
+
+/** Break Inside */
+@each $k, $v in $breakInside {
+  .break-inside-#{$k} {
+    break-inside: #{$v};
+  }
+}
+
+/** Box Decoration Break */
+.box-decoration-clone {
+  box-decoration-break: clone;
+}
+.box-decoration-slice {
+  box-decoration-break: slice;
+}
+
+/** Box Sizing */
+.box-border {
+  box-sizing: border-box;
+}
+.box-content {
+  box-sizing: content-box;
+}
+
+/** Display */
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+.flex {
+  display: flex;
+}
+.inline-flex {
+  display: inline-flex;
+}
+.table {
+  display: table;
+}
+.inline-table {
+  display: inline-table;
+}
+.table-caption {
+  display: table-caption;
+}
+.table-cell {
+  display: table-cell;
+}
+.table-column {
+  display: table-column;
+}
+.table-column-group {
+  display: table-column-group;
+}
+.table-footer-group {
+  display: table-footer-group;
+}
+.table-header-group {
+  display: table-header-group;
+}
+.table-row-group {
+  display: table-row-group;
+}
+.table-row {
+  display: table-row;
+}
+.flow-root {
+  display: flow-root;
+}
+.grid {
+  display: grid;
+}
+.inline-grid {
+  display: inline-grid;
+}
+.contents {
+  display: contents;
+}
+.list-item {
+  display: list-item;
+}
+.hidden {
+  display: none;
+}
+
+/** Floats */
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.float-none {
+  float: none;
+}
+
+/** Clear */
+.clear-left {
+  clear: left;
+}
+.clear-right {
+  clear: right;
+}
+.clear-both {
+  clear: both;
+}
+.clear-none {
+  clear: none;
+}
+
+/** Isolation */
+.isolate {
+  isolation: isolate;
+}
+.isolation-auto {
+  isolation: auto;
+}
+
+/** Object Fit */
+.object-contain {
+  object-fit: contain;
+}
+.object-cover {
+  object-fit: cover;
+}
+.object-fill {
+  object-fit: fill;
+}
+.object-none {
+  object-fit: none;
+}
+.object-scale-down {
+  object-fit: scale-down;
+}
+
+/** Object Position */
+.object-bottom {
+  object-position: bottom;
+}
+.object-center {
+  object-position: center;
+}
+.object-left {
+  object-position: left;
+}
+.object-left-bottom {
+  object-position: left bottom;
+}
+.object-left-top {
+  object-position: left top;
+}
+.object-right {
+  object-position: right;
+}
+.object-right-bottom {
+  object-position: right bottom;
+}
+.object-right-top {
+  object-position: right top;
+}
+.object-top {
+  object-position: top;
+}
+
+/** Overflow */
+.overflow-auto {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-clip {
+  overflow: clip;
+}
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+.overflow-x-auto {
+  overflow-x: auto;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+.overflow-x-clip {
+  overflow-x: clip;
+}
+.overflow-y-clip {
+  overflow-y: clip;
+}
+.overflow-x-visible {
+  overflow-x: visible;
+}
+.overflow-y-visible {
+  overflow-y: visible;
+}
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+/** Overscroll Behavior */
+.overscroll-auto {
+  overscroll-behavior: auto;
+}
+.overscroll-contain {
+  overscroll-behavior: contain;
+}
+.overscroll-none {
+  overscroll-behavior: none;
+}
+.overscroll-y-auto {
+  overscroll-behavior-y: auto;
+}
+.overscroll-y-contain {
+  overscroll-behavior-y: contain;
+}
+.overscroll-y-none {
+  overscroll-behavior-y: none;
+}
+.overscroll-x-auto {
+  overscroll-behavior-x: auto;
+}
+.overscroll-x-contain {
+  overscroll-behavior-x: contain;
+}
+.overscroll-x-none {
+  overscroll-behavior-x: none;
+}
+
+/** Position */
+.static {
+  position: static;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+}
+
+/** Top/Right/Bottom/Left */
+@each $k, $v in $inset {
+  .inset-#{$k} {
+    top: #{$v};
+    right: #{$v};
+    bottom: #{$v};
+    left: #{$v};
+  }
+  .inset-x-#{$k} {
+    right: #{$v};
+    left: #{$v};
+  }
+  .inset-y-#{$k} {
+    top: #{$v};
+    bottom: #{$v};
+  }
+  .top-#{$k} {
+    top: #{$v};
+  }
+  .right-#{$k} {
+    right: #{$v};
+  }
+  .bottom-#{$k} {
+    bottom: #{$v};
+  }
+  .left-#{$k} {
+    left: #{$v};
+  }
+}
+
+/** Visibility */
+.visible {
+  visibility: visible;
+}
+.invisible {
+  visibility: hidden;
+}
+
+/** Z-Index */
+.z-0 {
+  z-index: 0;
+}
+.z-10 {
+  z-index: 10;
+}
+.z-20 {
+  z-index: 20;
+}
+.z-30 {
+  z-index: 30;
+}
+.z-40 {
+  z-index: 40;
+}
+.z-50 {
+  z-index: 50;
+}
+.z-auto {
+  z-index: auto;
+}

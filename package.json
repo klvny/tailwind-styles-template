@@ -1,0 +1,35 @@
+{
+  "name": "deftcss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx gulp",
+    "clean": "npx gulp clean",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "dependencies": {
+    "vitepress": "^0.22.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "cssnano": "^5.1.5",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.12",
+    "postcss-import": "^14.1.0",
+    "postcss-sorting": "^7.0.1",
+    "sass": "^1.49.9",
+    "tailwindcss": "^3.0.23"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}

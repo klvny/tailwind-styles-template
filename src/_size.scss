@@ -1,0 +1,57 @@
+/** Width */
+@each $k, $v in $width {
+  .w-#{$k} {
+    width: #{$v};
+  }
+}
+
+/** Min Width */
+.min-w-0 {
+  min-width: 0px;
+}
+.min-w-full {
+  min-width: 100%;
+}
+.min-w-min {
+  min-width: min-content;
+}
+.min-w-max {
+  min-width: max-content;
+}
+.min-w-fit {
+  min-width: fit-content;
+}
+
+/** Max Width */
+@each $k, $v in $width {
+  .max-w-#{$k} {
+    max-width: #{$v};
+  }
+}
+
+@each $k, $v in $screens {
+  .max-w-screen-#{$k} {
+    max-width: #{$v};
+  }
+}
+/** Height */
+@each $k, $v in $height {
+    .h-#{$k} {
+      height: #{$v};
+    }
+  }
+
+/** Min Height */
+.min-h-0 {min-height: 0px;}
+.min-h-full {min-height: 100%;}
+.min-h-screen {min-height: 100vh;}
+.min-h-min {min-height: min-content;}
+.min-h-max {min-height: max-content;}
+.min-h-fit {min-height: fit-content;}
+
+/** Max Height */
+@each $k, $v in $maxHeight {
+    .max-h-#{$k} {
+      max-height: #{$v};
+    }
+  }

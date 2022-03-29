@@ -1,0 +1,63 @@
+@each $k, $v in $spacing {
+  .space-x-#{$k} > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(#{$v} * var(--tw-space-x-reverse));
+    margin-left: calc(#{$v} * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .space-y-#{$k} > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(#{$v} * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(#{$v} * var(--tw-space-y-reverse))
+}
+
+  .p-#{$k} {
+    padding: #{$v};
+  }
+  .px-#{$k} {
+    padding-left: #{$v};
+    padding-right: #{$v};
+  }
+  .pl-#{$k} {
+    padding-left: #{$v};
+  }
+  .pr-#{$k} {
+    padding-right: #{$v};
+  }
+  .py-#{$k} {
+    padding-top: #{$v};
+    padding-bottom: #{$v};
+  }
+  .pt-#{$k} {
+    padding-top: #{$v};
+  }
+  .pb-#{$k} {
+    padding-bottom: #{$v};
+  }
+}
+
+@each $k, $v in $margin {
+  .m-#{$k} {
+    margin: #{$v};
+  }
+  .mx-#{$k} {
+    margin-left: #{$v};
+    margin-right: #{$v};
+  }
+  .ml-#{$k} {
+    margin-left: #{$v};
+  }
+  .mr-#{$k} {
+    margin-right: #{$v};
+  }
+  .my-#{$k} {
+    margin-top: #{$v};
+    margin-bottom: #{$v};
+  }
+  .mt-#{$k} {
+    margin-top: #{$v};
+  }
+  .mb-#{$k} {
+    margin-bottom: #{$v};
+  }
+}

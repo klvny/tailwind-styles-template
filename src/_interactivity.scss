@@ -1,0 +1,227 @@
+/** Accent Color */
+@each $k, $v in $colors {
+  @each $ks, $vs in $v {
+    @if $ks == "default" {
+      .accent-#{$k} {
+        accent-color: #{$vs};
+      }
+    } @else {
+      .accent-#{$k}-#{$ks} {
+        accent-color: #{$vs};
+      }
+    }
+  }
+}
+
+/** Appearance */
+.appearance-none {
+  appearance: none;
+}
+
+/** Cursor */
+@each $k, $v in $cursor {
+  .cursor-#{$k} {
+    cursor: #{$v};
+  }
+}
+
+/** Caret Color */
+@each $k, $v in $colors {
+  @each $ks, $vs in $v {
+    @if $ks == "default" {
+      .caret-#{$k} {
+        caret-color: #{$vs};
+      }
+    } @else {
+      .caret-#{$k}-#{$ks} {
+        caret-color: #{$vs};
+      }
+    }
+  }
+}
+
+/** Pointer Events */
+.pointer-events-none {
+  pointer-events: none;
+}
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+/** Resize */
+.resize-none {
+  resize: none;
+}
+.resize-y {
+  resize: vertical;
+}
+.resize-x {
+  resize: horizontal;
+}
+.resize {
+  resize: both;
+}
+
+/** Scroll Behavior */
+.scroll-auto {
+  scroll-behavior: auto;
+}
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/** Scroll Margin */
+@each $k, $v in $margin {
+  .scroll-m-#{$k} {
+    scroll-margin: #{$v};
+  }
+  .scroll-mx-#{$k} {
+    scroll-margin-left: #{$v};
+    scroll-margin-right: #{$v};
+  }
+  .scroll-ml-#{$k} {
+    margin-left: #{$v};
+  }
+  .scroll-mr-#{$k} {
+    scroll-margin-right: #{$v};
+  }
+  .scroll-my-#{$k} {
+    scroll-margin-top: #{$v};
+    scroll-margin-bottom: #{$v};
+  }
+  .scroll-mt-#{$k} {
+    scroll-margin-top: #{$v};
+  }
+  .scroll-mb-#{$k} {
+    scroll-margin-bottom: #{$v};
+  }
+}
+
+/** Scroll Padding */
+@each $k, $v in $spacing {
+  .scroll-p-#{$k} {
+    scroll-padding: #{$v};
+  }
+  .scroll-px-#{$k} {
+    scroll-padding-left: #{$v};
+    scroll-padding-right: #{$v};
+  }
+  .scroll-pl-#{$k} {
+    scroll-padding-left: #{$v};
+  }
+  .scroll-pr-#{$k} {
+    scroll-padding-right: #{$v};
+  }
+  .scroll-py-#{$k} {
+    scroll-padding-top: #{$v};
+    scroll-padding-bottom: #{$v};
+  }
+  .scroll-pt-#{$k} {
+    scroll-padding-top: #{$v};
+  }
+  .scroll-pb-#{$k} {
+    scroll-padding-bottom: #{$v};
+  }
+}
+
+/** Scroll Snap Align */
+.snap-start {
+  scroll-snap-align: start;
+}
+.snap-end {
+  scroll-snap-align: end;
+}
+.snap-center {
+  scroll-snap-align: center;
+}
+.snap-align-none {
+  scroll-snap-align: none;
+}
+
+/** Scroll Snap Stop */
+.snap-normal {
+  scroll-snap-stop: normal;
+}
+.snap-always {
+  scroll-snap-stop: always;
+}
+
+/** Scroll Snap Type */
+.snap-none {
+  scroll-snap-type: none;
+}
+.snap-x {
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+.snap-y {
+  scroll-snap-type: y var(--tw-scroll-snap-strictness);
+}
+.snap-both {
+  scroll-snap-type: both var(--tw-scroll-snap-strictness);
+}
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+.snap-proximity {
+  --tw-scroll-snap-strictness: proximity;
+}
+
+/** Touch Action */
+.touch-auto {
+  touch-action: auto;
+}
+.touch-none {
+  touch-action: none;
+}
+.touch-pan-x {
+  touch-action: pan-x;
+}
+.touch-pan-left {
+  touch-action: pan-left;
+}
+.touch-pan-right {
+  touch-action: pan-right;
+}
+.touch-pan-y {
+  touch-action: pan-y;
+}
+.touch-pan-up {
+  touch-action: pan-up;
+}
+.touch-pan-down {
+  touch-action: pan-down;
+}
+.touch-pinch-zoom {
+  touch-action: pinch-zoom;
+}
+.touch-manipulation {
+  touch-action: manipulation;
+}
+
+/** User Select */
+.select-none {
+  user-select: none;
+}
+.select-text {
+  user-select: text;
+}
+.select-all {
+  user-select: all;
+}
+.select-auto {
+  user-select: auto;
+}
+
+/** Will Change */
+.will-change-auto {
+  will-change: auto;
+}
+.will-change-scroll {
+  will-change: scroll-position;
+}
+.will-change-contents {
+  will-change: contents;
+}
+.will-change-transform {
+  will-change: transform;
+}
